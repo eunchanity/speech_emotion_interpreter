@@ -7,10 +7,6 @@ import pickle
 import keras
 from keras.models import Sequential, Model, model_from_json
 import speech_recognition as sr
-from pydub import AudioSegment
-import io
-import pyaudio
-import wave
 
 # remove deprecation warning
 st.set_option("deprecation.showfileUploaderEncoding", False)
