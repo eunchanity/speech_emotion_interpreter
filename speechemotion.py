@@ -30,18 +30,13 @@ audio_file = st.file_uploader("", type=["wav"])
 st.audio(audio_file, format="audio/wav")
 
 # load in model
-json_file = open(
-    "/Users/davidweon/davids_repo/projects/project5_speech_emotion/streamlit/saved_models/cnn_model_json.json",
-    "r",
-)
+json_file = open("saved_models/cnn_model_json.json", "r",)
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 
 # load weights into new model
-loaded_model.load_weights(
-    "/Users/davidweon/davids_repo/projects/project5_speech_emotion/streamlit/saved_models/cnn_model_weights.h5"
-)
+loaded_model.load_weights("saved_models/cnn_model_weights.h5")
 
 # optimizer
 opt = keras.optimizers.RMSprop(lr=0.00001, decay=1e-6)
@@ -65,7 +60,7 @@ if audio_file is not None:
     audio_df = loaded_model.predict(audio_df, batch_size=16, verbose=1)
 
     # map model prediction to saved label
-    filename = "/Users/davidweon/davids_repo/projects/project5_speech_emotion/streamlit/saved_models/emotion_speech_labels"
+    filename = "saved_models/emotion_speech_labels"
     infile = open(filename, "rb")
     lb = pickle.load(infile)
     infile.close()
