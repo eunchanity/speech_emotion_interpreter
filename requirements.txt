@@ -4,5 +4,4 @@ gunicorn
 streamlit
 librosa
 keras
-tensorflow
 scipy==1.4.1
