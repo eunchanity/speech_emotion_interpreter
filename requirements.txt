@@ -5,4 +5,3 @@ gunicorn
 streamlit
 librosa
 keras
-speech_recognition

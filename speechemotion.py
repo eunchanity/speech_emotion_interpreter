@@ -6,7 +6,8 @@ import json
 import pickle
 import keras
 from keras.models import Sequential, Model, model_from_json
-import speech_recognition as sr
+
+# import speech_recognition as sr
 
 # remove deprecation warning
 st.set_option("deprecation.showfileUploaderEncoding", False)
