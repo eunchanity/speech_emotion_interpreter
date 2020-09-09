@@ -50,6 +50,8 @@ loaded_model.compile(
 )
 st.write("")
 st.write("")
+if audio_file is None:
+    pass
 if audio_file is not None:
     # transform new audio file data
     X, sample_rate = librosa.load(
