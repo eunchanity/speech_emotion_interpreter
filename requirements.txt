@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+gunicorn
+streamlit
+librosa
+json
+keras
+pydub
+pyaudio
+io
+wave
+speech_recognition
