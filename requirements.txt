@@ -1,8 +1,8 @@
-numpy
+numpy=1.16.0
 pandas
-matplotlib
 gunicorn
 streamlit
 librosa
 keras
 tensorflow
+scipy==1.4.1
