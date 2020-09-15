@@ -107,7 +107,7 @@ st.sidebar.markdown(
 st.sidebar.markdown("---")
 st.sidebar.subheader("Technical Details")
 st.sidebar.markdown(
-    "A 1D convoluted neural network (CNN) model was trained on the RAVDESS emotional speech dataset.  \n"
+    "A 1D convolutional neural network (CNN) model was trained on the RAVDESS emotional speech dataset.  \n"
     "  \n"
     "The validation loss was `1.4470` and the validation accuracy was `0.525` for predicting gender _and_ emotion. The accuracy for gender and emotion individually differed quite a bit for this model. \n"
     "  \n"
